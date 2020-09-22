@@ -20,11 +20,10 @@
     <meta name="description"
         content="Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
     <meta name="keywords"
-        content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+        content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
     <meta name="author" content="colorlib" />
 
     <link rel="icon" href="https://colorlib.com/polygon/admindek/files/assets/images/favicon.ico" type="image/x-icon">
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
 
@@ -34,7 +33,19 @@
 
     <link rel="stylesheet" type="text/css" href="css/feather.css">
 
+    <link href="css/jquery.filer.css" type="text/css" rel="stylesheet" />
+    <link href="css/jquery.filer-dragdropbox-theme.css" type="text/css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="css/themify-icons.css">
+
+    <link rel="stylesheet" type="text/css" href="css/icofont.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.steps.css">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
 </head>
 
 <body>
@@ -245,8 +256,8 @@
                                     <div class="page-header-title">
                                         <i class="feather icon-watch bg-c-blue"></i>
                                         <div class="d-inline">
-                                            <h5>Sample page</h5>
-                                            <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                            <h5>Release app</h5>
+                                            <span>fill app info and release it</span>
                                         </div>
                                     </div>
                                 </div>
@@ -273,37 +284,83 @@
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Hello card</h5>
-                                                        <div class="card-header-right">
-                                                            <ul class="list-unstyled card-option">
-                                                                <li class="first-opt"><i
-                                                                        class="feather icon-chevron-left open-card-option"></i>
-                                                                </li>
-                                                                <li><i class="feather icon-maximize full-card"></i></li>
-                                                                <li><i class="feather icon-minus minimize-card"></i>
-                                                                </li>
-                                                                <li><i class="feather icon-refresh-cw reload-card"></i>
-                                                                </li>
-                                                                <li><i class="feather icon-trash close-card"></i></li>
-                                                                <li><i
-                                                                        class="feather icon-chevron-left open-card-option"></i>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
                                                     <div class="card-block">
-                                                        <p>
-                                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                                            Duis aute irure dolor
-                                                            in reprehenderit in voluptate velit esse cillum dolore eu
-                                                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                            proident, sunt in culpa qui officia deserunt mollit anim id
-                                                            est laborum."
-                                                        </p>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div id="wizardb">
+                                                                    <section>
+                                                                        <form class="wizard-form" id="verticle-wizard"
+                                                                            action="#">
+                                                                            <h3> Upload IPA </h3>
+                                                                            <fieldset>
+                                                                                <div class="card-block">
+                                                                                    <div class="fallback">
+                                                                                        <input name="file" type="file" multiple />
+                                                                                    </div>
+                                                                                    <div class="text-center m-t-20">
+                                                                                        <button class="btn btn-primary">Upload Now</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </fieldset>
+                                                                            <h3> Fill Info </h3>
+                                                                            <fieldset>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="name-2" class="block">
+                                                                                            Application Name
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input type="text" class="form-control" placeholder="网易会议" readonly>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="name-2" class="block">
+                                                                                            Version
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input type="text" class="form-control" placeholder="1.0.1" readonly>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        Install Type
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <select class="form-control required">
+                                                                                            <option>Public</option>
+                                                                                            <option>Need Password</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="surname-2" class="block">
+                                                                                            Update Information
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="surname-2b" name="surname" type="text" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="phone-2" class="block">
+                                                                                            Application Introduce
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="surname-2b" name="surname" type="text" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </fieldset>
+                                                                        </form>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -369,29 +426,43 @@
     <![endif]-->
 
 
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/jquery.min.js"></script>
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/jquery-ui.min.js"></script>
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/popper.min.js"></script>
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="ce2668daaac54a74e9f6cdff-text/javascript" src="js/jquery.min.js"></script>
+    <script type="ce2668daaac54a74e9f6cdff-text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="ce2668daaac54a74e9f6cdff-text/javascript" src="js/popper.min.js"></script>
+    <script type="ce2668daaac54a74e9f6cdff-text/javascript" src="js/bootstrap.min.js"></script>
 
-    <script src="js/waves.min.js" type="d8424a08d31b5b8b406fded2-text/javascript"></script>
+    <script src="js/waves.min.js" type="ce2668daaac54a74e9f6cdff-text/javascript"></script>
 
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/jquery.slimscroll.js"></script>
-    <script src="js/pcoded.min.js" type="d8424a08d31b5b8b406fded2-text/javascript"></script>
-    <script src="js/vertical-layout.min.js" type="d8424a08d31b5b8b406fded2-text/javascript"></script>
+    <script type="ce2668daaac54a74e9f6cdff-text/javascript" src="js/jquery.slimscroll.js"></script>
 
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/script.min.js"></script>
+    <script src="js/dropzone-amd-module.min.js" type="ad6a379b5a73756c7bd7b3cd-text/javascript"></script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
-        type="d8424a08d31b5b8b406fded2-text/javascript"></script>
-    <script type="d8424a08d31b5b8b406fded2-text/javascript">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script type="ce2668daaac54a74e9f6cdff-text/javascript" src="js/modernizr.js"></script>
+    <script type="ce2668daaac54a74e9f6cdff-text/javascript" src="js/css-scrollbars.js"></script>
 
-  gtag('config', 'UA-23581568-13');
-</script>
-    <script src="js/rocket-loader.min.js" data-cf-settings="d8424a08d31b5b8b406fded2-|49" defer=""></script>
+    <script src="js/jquery.cookie.js" type="ce2668daaac54a74e9f6cdff-text/javascript"></script>
+    <script src="js/jquery.steps.js" type="ce2668daaac54a74e9f6cdff-text/javascript"></script>
+    <script src="js/jquery.validate.js" type="ce2668daaac54a74e9f6cdff-text/javascript"></script>
+
+    <script src="js/underscore-min.js" type="ce2668daaac54a74e9f6cdff-text/javascript"></script>
+    <script src="js/moment.min.js" type="ce2668daaac54a74e9f6cdff-text/javascript"></script>
+    <script type="ce2668daaac54a74e9f6cdff-text/javascript" src="js/validate.js"></script>
+
+    <script src="js/form-wizard.js" type="ce2668daaac54a74e9f6cdff-text/javascript"></script>
+    <script src="js/pcoded.min.js" type="ce2668daaac54a74e9f6cdff-text/javascript"></script>
+    <script src="js/vertical-layout.min.js" type="ce2668daaac54a74e9f6cdff-text/javascript"></script>
+    <script src="js/jquery.mcustomscrollbar.concat.min.js" type="ce2668daaac54a74e9f6cdff-text/javascript"></script>
+    <script type="ce2668daaac54a74e9f6cdff-text/javascript" src="js/script.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="ce2668daaac54a74e9f6cdff-text/javascript"></script>
+    <script type="ce2668daaac54a74e9f6cdff-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="ce2668daaac54a74e9f6cdff-|49" defer=""></script>
 </body>
 
 <!-- Mirrored from colorlib.com/polygon/admindek/default/sample-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2019 16:10:10 GMT -->
