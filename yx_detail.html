@@ -15,13 +15,7 @@
 		<![endif]-->
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description"
-        content="Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
-    <meta name="keywords"
-        content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
-    <meta name="author" content="colorlib" />
+
 
     <link rel="icon" href="https://colorlib.com/polygon/admindek/files/assets/images/favicon.ico" type="image/x-icon">
 
@@ -32,9 +26,18 @@
 
     <link rel="stylesheet" href="css/waves.min.css" type="text/css" media="all">
 
+    <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css">
+
     <link rel="stylesheet" type="text/css" href="css/feather.css">
 
+    <link rel="stylesheet" type="text/css" href="css/icofont.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/prism.css">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
 </head>
 
 <body>
@@ -188,6 +191,7 @@
             <div class="pcoded-main-container">
                 <div class="pcoded-wrapper">
 
+                    <!-- side navigation beign -->
                     <nav class="pcoded-navbar">
                         <div class="nav-list">
                             <div class="pcoded-inner-navbar main-menu">
@@ -236,6 +240,7 @@
                             </div>
                         </div>
                     </nav>
+                    <!-- side navigation end -->
 
                     <div class="pcoded-content">
 
@@ -243,10 +248,10 @@
                             <div class="row align-items-end">
                                 <div class="col-lg-8">
                                     <div class="page-header-title">
-                                        <i class="feather icon-watch bg-c-blue"></i>
+                                        <i class="fa fa-diamond bg-c-blue"></i>
                                         <div class="d-inline">
-                                            <h5>Crash Analysis</h5>
-                                            <span>use package url and crash file to symbolicate crash report</span>
+                                            <h5>Detail</h5>
+                                            <span>application detail information</span>
                                         </div>
                                     </div>
                                 </div>
@@ -257,7 +262,7 @@
                                                 <a href="index.html"><i class="feather icon-home"></i></a>
                                             </li>
                                             <li class="breadcrumb-item">
-                                                <a href="#!">Crash Analysis</a>
+                                                <a href="#!">Detail</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -270,29 +275,119 @@
                                 <div class="page-wrapper">
                                     <div class="page-body">
 
-                                        <div class="card">
-                                            <div class="card-block">
-                                                <form>
-                                                    <div class="form-group row">
-                                                        <label class="col-sm-2 col-form-label">
-                                                            Package URL
-                                                        </label>
-                                                        <div class="col-sm-10">
-                                                            <input type="text" class="form-control">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-xl-3">
+                                                <div id="navigation">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="card version">
+                                                                <div class="card-block">
+                                                                    <ul class="nav navigation">
+                                                                        <img src="jpg/error-1.jpg" alt="Layout-1" class="img-fluid">
+                                                                        
+                                                                        <li class="navigation-header">
+                                                                            <i class="icon-history pull-right"></i>
+                                                                            <b>网易会议</b>
+                                                                        </li>
+                                                                        <li class="waves-effect waves-light">
+                                                                            <a href="#v_1_2">
+                                                                                Version
+                                                                                <span class="text-muted text-regular pull-right">1.1.0 (Build 2915)</span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="waves-effect waves-light">
+                                                                            <a href="#v_1_2">
+                                                                                Update
+                                                                                <span class="text-muted text-regular pull-right">18.12.2017</span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="navigation-divider"></li>
+                                                                    </ul>
+                                                                    <div class="support-btn">
+                                                                        <a href="#!" class="btn waves-effect waves-light btn-danger btn-block">
+                                                                            <i class="fa fa-trash"></i>
+                                                                            Delete
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group row">
-                                                        <label class="col-sm-2 col-form-label">
-                                                            Upload File
-                                                        </label>
-                                                        <div class="col-sm-10">
-                                                            <input type="file" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 col-xl-9">
+                                                <div class="col-sm-12">
+                                                    <div class="card" id="v_1_2">
+                                                        <div class="card-block">
+                                                            <h4 class="sub-title">APPLICATION INFORMATION</h4>
+                                                            <dl class="dl-horizontal row">
+                                                                <dt class="col-sm-3">
+                                                                    Bundle ID
+                                                                </dt>
+                                                                <dd class="col-sm-9">
+                                                                    com.netease.nmc.VideoStream-i
+                                                                </dd>
+                                                                <dt class="col-sm-3">
+                                                                    Package URL
+                                                                </dt>
+                                                                <dd class="col-sm-9">
+                                                                    <a href="#" class="text-c-blue">
+                                                                        http://10.242.126.110:8080/s/XzQn
+                                                                    </a>
+                                                                </dd>
+                                                            </dl>
+
+                                                            <pre class="language-javascript">
+                                                                <code>
+                                                                    // # List of new components
+                                                                    // ------------------------------
+                            
+                                                                    [new]  RTL layout for all 4 main layout variations
+                                                                    [new]  bootbox.less - new LESS file for extended Bootstrap modal dialogs
+                            
+                            
+                                                                    // # List of updated plugins
+                                                                    // ------------------------------
+                            
+                                                                    [updated]  CKEditor - latest version
+                                                                    [updated]  Select2 - latest 3.5.x version, 4.0 is coming
+                                                                    [updated]  Bootstrap Multiselect - latest version
+                                                                    [updated]  Datatables - latest version
+                            
+                            
+                                                                    // # List of fixed bugs
+                                                                    // ------------------------------
+                            
+                                                                    // Core fixes
+                                                                    [fixed]  Sidebar - side border overlaped content in light sidebar (layout 1 and 2)
+                                                                    [fixed]  Breadcrumbs - in colored version links had wrong background color on hover/active
+                                                                    [fixed]  Breadcrumbs - dropdown menu didn't have borders in breadcrumb line component
+                                                                    [fixed]  Labels - striped labels didn't have right border variation as supposed to
+                                                                    [fixed]  Navbars - unnecessary dropdown menu re-position in navbar component
+                                                                    [fixed]  Button groups - extra space between buttons in toolbar
+                                                                    [fixed]  Tables - extra border in framed table in responsive table container
+                            
+                                                                    // Components fixes
+                                                                    [fixed]  Bootstrap Select - wrong rounded corners inside input group
+                                                                    [fixed]  Bootstrap Select - no styling of dropdown menu
+                                                                    [fixed]  SelectBox - wrong rounded corners inside input group
+                                                                    [fixed]  Tags Input - input field didn't have bottom spacing
+                                                                    [fixed]  Typeahead - small menu width if text options are too short
+                                                                    [fixed]  Sweet alerts - title was too big for motification size
+                                                                    [fixed]  Anytime picker - wrong title margin and unnecessary close button
+                                                                    [fixed]  jQuery UI Datepicker - extra RTL-related code in less file
+                                                                    [fixed]  Fullcalendar - extra RTL-related code in less file
+                                                                    [fixed]  Chats - wrong variables in LESS file
+                                                                    [fixed]  Dropzone Uploader - success/error markers moved down in thumbnails is name is visible
+                                                                    [fixed]  Colors - default BS styles overrided text hover state
+                                                                    [fixed]  SelectBox page - extra panel control buttons
+                                                                </code>
+                                                            </pre>
                                                         </div>
                                                     </div>
-                                                </form>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -353,29 +448,35 @@
     <![endif]-->
 
 
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/jquery.min.js"></script>
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/jquery-ui.min.js"></script>
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/popper.min.js"></script>
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="78a72cb16ca222acb986ad62-text/javascript" src="js/jquery.min.js"></script>
+    <script type="78a72cb16ca222acb986ad62-text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="78a72cb16ca222acb986ad62-text/javascript" src="js/popper.min.js"></script>
+    <script type="78a72cb16ca222acb986ad62-text/javascript" src="js/bootstrap.min.js"></script>
 
-    <script src="js/waves.min.js" type="d8424a08d31b5b8b406fded2-text/javascript"></script>
+    <script src="js/waves.min.js" type="78a72cb16ca222acb986ad62-text/javascript"></script>
 
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/jquery.slimscroll.js"></script>
-    <script src="js/pcoded.min.js" type="d8424a08d31b5b8b406fded2-text/javascript"></script>
-    <script src="js/vertical-layout.min.js" type="d8424a08d31b5b8b406fded2-text/javascript"></script>
+    <script type="78a72cb16ca222acb986ad62-text/javascript" src="js/jquery.slimscroll.js"></script>
 
-    <script type="d8424a08d31b5b8b406fded2-text/javascript" src="js/script.min.js"></script>
+    <script type="78a72cb16ca222acb986ad62-text/javascript" src="js/modernizr.js"></script>
+    <script type="78a72cb16ca222acb986ad62-text/javascript" src="js/css-scrollbars.js"></script>
+
+    <script type="78a72cb16ca222acb986ad62-text/javascript" src="js/custom-prism.js"></script>
+
+    <script src="js/pcoded.min.js" type="78a72cb16ca222acb986ad62-text/javascript"></script>
+    <script src="js/vertical-layout.min.js" type="78a72cb16ca222acb986ad62-text/javascript"></script>
+    <script src="js/jquery.mcustomscrollbar.concat.min.js" type="78a72cb16ca222acb986ad62-text/javascript"></script>
+    <script type="78a72cb16ca222acb986ad62-text/javascript" src="js/script.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
-        type="d8424a08d31b5b8b406fded2-text/javascript"></script>
-    <script type="d8424a08d31b5b8b406fded2-text/javascript">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        type="78a72cb16ca222acb986ad62-text/javascript"></script>
+    <script type="78a72cb16ca222acb986ad62-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'UA-23581568-13');
-</script>
-    <script src="js/rocket-loader.min.js" data-cf-settings="d8424a08d31b5b8b406fded2-|49" defer=""></script>
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="78a72cb16ca222acb986ad62-|49" defer=""></script>
 </body>
 
 <!-- Mirrored from colorlib.com/polygon/admindek/default/sample-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2019 16:10:10 GMT -->
