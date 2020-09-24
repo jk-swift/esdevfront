@@ -417,7 +417,7 @@
                                             <div class="col-sm-12">
                                                 <div class="card">
                                                     <div class="card-header">
-                                                        <h5>Choose Platform</h5>
+                                                        <h5>Choose Platform {{ selected }}</h5>
                                                     </div>
                                                     <div class="card-block">
                                                         <div class="row">
@@ -426,14 +426,13 @@
                                                                     <form>
                                                                         <div class="radio radio-inline">
                                                                             <label>
-                                                                                <input type="radio" name="radio"
-                                                                                    checked="checked">
+                                                                                <input type="radio" name="radio" value="ios" v-model="selected">
                                                                                 <i class="helper"></i>iOS
                                                                             </label>
                                                                         </div>
                                                                         <div class="radio radio-inline">
                                                                             <label>
-                                                                                <input type="radio" name="radio">
+                                                                                <input type="radio" name="radio" value="android" v-model="selected">
                                                                                 <i class="helper"></i>Android
                                                                             </label>
                                                                         </div>
@@ -674,13 +673,42 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
         type="d2d1d6e2f87cbebdf4013b26-text/javascript"></script>
     <script type="d2d1d6e2f87cbebdf4013b26-text/javascript">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'UA-23581568-13');
-</script>
+        gtag('config', 'UA-23581568-13');
+    </script>
     <script src="js/rocket-loader.min.js" data-cf-settings="d2d1d6e2f87cbebdf4013b26-|49" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="d2d1d6e2f87cbebdf4013b26-text/javascript">
+        var app = new Vue({
+            el: '#pcoded',
+            data: {
+              message: 'Hello Vue!',
+              selected: ''
+            },
+            watch: {
+                selected: function (val) {
+                    this.getApps(val)
+                }
+            },
+            methods: {
+                getApps: function(platform) {
+                    console.log('platform: ' + platform)
+                    let url = 'http://www.baidu.com'
+                    axios.get(url)
+                        .then(function (response) {
+                            // 成功时回调
+                        })
+                        .catch(function (error) {
+                            // 错误时回调
+                        })
+                }
+            }
+        })
+    </script>
 </body>
 
 <!-- Mirrored from colorlib.com/polygon/admindek/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2019 16:08:25 GMT -->
